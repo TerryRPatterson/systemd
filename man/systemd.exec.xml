@@ -3589,6 +3589,10 @@ StandardInputData=V2XigLJyZSBubyBzdHJhbmdlcnMgdG8gbG92ZQpZb3Uga25vdyB0aGUgcnVsZX
                   <entry>A start limit was defined for the unit and it was hit, causing the unit to fail to start. See <citerefentry><refentrytitle>systemd.unit</refentrytitle><manvolnum>5</manvolnum></citerefentry>'s <varname>StartLimitIntervalSec=</varname> and <varname>StartLimitBurst=</varname> for details.</entry>
                 </row>
                 <row>
+                    <entry><literal>oom-kill</literal></entry>
+                    <entry>Due to a low memory situation, the unit was killed by the Linux kernel's Out-Of-Memory (OOM) killer, or  <command>systemd-oomd</command>.</entry>
+                </row>
+                <row>
                   <entry><literal>resources</literal></entry>
                   <entry>A catch-all condition in case a system operation failed.</entry>
                 </row>
